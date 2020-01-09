@@ -1,0 +1,47 @@
+.overlay {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
+  .overlay__logo-container {
+    position: relative;
+    z-index: 3;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto; }
+  .overlay__diag {
+    position: absolute;
+    height: 150vh;
+    width: 100%; }
+    .overlay__diag--top {
+      width: 0;
+      height: 0;
+      opacity: 0.7;
+      border-bottom: 100vh solid #00a2ff;
+      border-right: 100vw solid transparent;
+      top: 0;
+      left: 0;
+      animation: slidebl 1s ease-in 2s infinite; }
+    .overlay__diag--bottom {
+      width: 0;
+      height: 0;
+      opacity: 0.7;
+      border-right: 100vw solid #34f85f;
+      border-bottom: 100vh solid transparent;
+      top: 0;
+      left: 0;
+      animation: slidetr 1s ease-in 2s infinite; }
+
+@keyframes slidebl {
+  0% {
+    transform: translateY(0) translateX(0); }
+  100% {
+    transform: translateY(100vh) translateX(-100vw); } }
+
+@keyframes slidetr {
+  0% {
+    transform: translateY(0) translateX(0); }
+  100% {
+    transform: translateY(-100vh) translateX(100vw); } }

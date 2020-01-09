@@ -1,0 +1,8 @@
+// variables
+
+// mixins
+@mixin big-screens {
+  @media (min-width: 499px) {
+    @content;
+  }
+}

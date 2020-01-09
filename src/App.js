@@ -1,10 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Overlay from "./components/Overlay";
 
-import "./app.css";
+import "./scss/app.css";
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <Router>
+      <Overlay />
+    </Router>
+  );
 }
 
 export default App;
