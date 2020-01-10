@@ -1,4 +1,6 @@
 .overlay {
+  position: relative;
+  z-index: 1;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -11,6 +13,16 @@
     height: 60px;
     width: 60px;
     margin: 0 auto;
+  }
+
+  &__logo__rotate {
+    animation: rotate 2s normal;
+    animation-fill-mode: forwards;
+  }
+
+  &__logo__scale {
+    animation: scale 2s normal;
+    animation-fill-mode: forwards;
   }
 
   &__diag {
@@ -28,7 +40,9 @@
       top: 0;
       left: 0;
 
-      animation: slidebl 1s ease-in 2s infinite;
+      animation: slide-bl 1s ease-in 1.5s;
+
+      animation-fill-mode: forwards;
     }
 
     &--bottom {
@@ -41,12 +55,13 @@
       border-bottom: 100vh solid transparent;
       top: 0;
       left: 0;
-      animation: slidetr 1s ease-in 2s infinite;
+      animation: slide-tr 1s ease-in 1.5s;
+      animation-fill-mode: forwards;
     }
   }
 }
 
-@keyframes slidebl {
+@keyframes slide-bl {
   0% {
     transform: translateY(0) translateX(0);
   }
@@ -55,11 +70,43 @@
   }
 }
 
-@keyframes slidetr {
+@keyframes slide-tr {
   0% {
     transform: translateY(0) translateX(0);
   }
   100% {
     transform: translateY(-100vh) translateX(100vw);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
   }
 }
