@@ -13,6 +13,8 @@
     height: 60px;
     width: 60px;
     margin: 0 auto; }
+    .overlay__logo-container svg path {
+      fill: #fff; }
   .overlay__logo__rotate {
     animation: rotate 2s normal;
     animation-fill-mode: forwards; }

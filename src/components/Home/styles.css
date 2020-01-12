@@ -1,42 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
-.section__container {
-  background: #fff;
-  height: 100vh;
-  padding: 0 30px; }
-
-.section__title {
-  font-size: 47px;
-  font-weight: bold;
-  letter-spacing: -0.05em;
-  line-height: 1.05;
-  text-align: center; }
-
-.section__subtitle {
-  margin: 30px 0 0 0;
-  font-size: 18px;
-  text-align: center; }
-
-.section--landing {
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../../imgs/back.jpg);
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat; }
-
+@import url(../Page/styles.css);
 .section__container {
   position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   transform: scale(0);
-  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s 1 normal forwards;
-  animation: name duration timing-function delay iteration-count direction fill-mode; }
+  animation: scale-in-hor-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s 1 normal forwards; }
 
-.section__text-container {
+.section__transparent {
   background: linear-gradient(transparent, transparent), url(../../imgs/back.jpg) right center/cover no-repeat fixed;
   background-clip: text;
   -webkit-background-clip: text;
@@ -44,7 +13,8 @@
   -webkit-text-fill-color: transparent; }
 
 .section__title--home {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px; }
 
 @keyframes scale-in-hor-left {
   0% {

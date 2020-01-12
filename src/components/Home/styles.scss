@@ -1,36 +1,17 @@
-@import "../../scss/partials/section";
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
+@import "../Page/styles.css";
 
 .section {
-  &--landing {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../../imgs/back.jpg);
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-  }
-
   &__container {
     position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
 
     transform: scale(0);
 
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s
+    animation: scale-in-hor-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s
       1 normal forwards;
-
-    animation: name duration timing-function delay iteration-count direction
-      fill-mode;
   }
 
-  &__text-container {
+  &__transparent {
     background: linear-gradient(transparent, transparent),
       url(../../imgs/back.jpg) right center/cover no-repeat fixed;
     background-clip: text;
@@ -42,6 +23,7 @@
   &__title {
     &--home {
       font-family: "Open Sans", sans-serif;
+      font-size: 48px;
     }
   }
 }
