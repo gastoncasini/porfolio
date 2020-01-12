@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ReactComponent as Logo } from "../../svg/Logo.svg";
-
+import Navbar from "../Navbar";
 import "./styles.css";
 
 class Page extends Component {
@@ -18,6 +18,7 @@ class Page extends Component {
           </a>
           {this.props.children}
         </div>
+        <Navbar />
       </section>
     );
   }

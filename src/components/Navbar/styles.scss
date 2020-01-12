@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+@import "../../scss/partials/global";
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+
+  &__links {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &__link-container {
+    position: relative;
+    bottom: -70px;
+    width: 33.3%;
+
+    text-align: center;
+
+    animation: pop-in 0.5s forwards;
+    animation-delay: 2.5s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(180deg, #7a5fff, #01ff89);
+      background-size: 400% 400%;
+
+      animation: gradient-twist 15s ease infinite;
+    }
+
+    &--delayed {
+      animation-delay: 3s;
+
+      &::after {
+        animation-duration: 15s;
+        animation-delay: -7s;
+      }
+    }
+
+    &--delayed2 {
+      animation-delay: 3.5s;
+
+      &::after {
+        animation-duration: 15s;
+        animation-delay: -13s;
+      }
+    }
+  }
+
+  &__link {
+    font-family: Lora, Georgia, serif;
+    color: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+    @include big-screens {
+      font-size: 36px;
+    }
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes gradient-twist {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: 20% 30%;
+  }
+
+  40% {
+    background-position: 50% 50%;
+  }
+
+  60% {
+    background-position: 80% 67%;
+  }
+
+  80% {
+    background-position: 55% 45%;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

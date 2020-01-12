@@ -2,15 +2,6 @@
 @import "../Page/styles.css";
 
 .section {
-  &__container {
-    position: relative;
-
-    transform: scale(0);
-
-    animation: scale-in-hor-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s
-      1 normal forwards;
-  }
-
   &__transparent {
     background: linear-gradient(transparent, transparent),
       url(../../imgs/back.jpg) right center/cover no-repeat fixed;
@@ -25,22 +16,5 @@
       font-family: "Open Sans", sans-serif;
       font-size: 48px;
     }
-  }
-}
-
-@keyframes scale-in-hor-left {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    opacity: 1;
   }
 }
