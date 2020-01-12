@@ -10,7 +10,9 @@ const Home = () => {
           HI, MY NAME IS <br /> GASTON CASINI
         </h1>
 
-        <p className="section__subtitle">in development Software Developer </p>
+        <p className="section__subtitle">
+          in development Software Developer :){" "}
+        </p>
       </div>
     </Page>
   );

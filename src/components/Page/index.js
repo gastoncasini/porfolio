@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../svg/Logo.svg";
 import Navbar from "../Navbar";
 import "./styles.css";
@@ -10,12 +11,18 @@ class Page extends Component {
   }
 
   render() {
+    const { classes } = this.props;
+    const containerClasses = classes
+      ? `section__container ${classes}`
+      : "section__container";
+
     return (
       <section className="section">
-        <div className="section__container">
-          <a href="/" className="section__logo-container">
+        <div className={containerClasses}>
+          <Link className="section__logo-container">
             <Logo />
-          </a>
+          </Link>
+
           {this.props.children}
         </div>
         <Navbar />

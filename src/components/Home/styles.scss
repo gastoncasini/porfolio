@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
 @import "../Page/styles.css";
+@import "../../scss/partials/global.scss";
 
 .section {
+  &__container {
+    &--home {
+      @include big-screens {
+        display: block;
+      }
+    }
+  }
+
   &__transparent {
     background: linear-gradient(transparent, transparent),
       url(../../imgs/back.jpg) right center/cover no-repeat fixed;
@@ -9,12 +18,28 @@
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+
+    @include big-screens {
+      position: relative;
+      transform: translate(-100px, 300px);
+    }
   }
 
   &__title {
     &--home {
       font-family: "Open Sans", sans-serif;
       font-size: 48px;
+      @include big-screens {
+        font-size: 110px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__subtitle {
+    @include big-screens {
+      font-size: 28px;
+      text-align: right;
     }
   }
 }

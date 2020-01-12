@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
 @import url(../Page/styles.css);
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+@media (min-width: 499px) {
+  .section__container--home {
+    display: block; } }
+
 .section__transparent {
   background: linear-gradient(transparent, transparent), url(../../imgs/back.jpg) right center/cover no-repeat fixed;
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent; }
+  @media (min-width: 499px) {
+    .section__transparent {
+      position: relative;
+      transform: translate(-100px, 300px); } }
 
 .section__title--home {
   font-family: "Open Sans", sans-serif;
   font-size: 48px; }
+  @media (min-width: 499px) {
+    .section__title--home {
+      font-size: 110px;
+      text-align: right; } }
+
+@media (min-width: 499px) {
+  .section__subtitle {
+    font-size: 28px;
+    text-align: right; } }
