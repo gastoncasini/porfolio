@@ -1,4 +1,5 @@
 /* normalize */
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
 html,
 body,
 p,
@@ -52,4 +53,4 @@ legend {
 
 html,
 body {
-  font-family: sans-serif; }
+  font-family: Lora, Georgia, serif; }

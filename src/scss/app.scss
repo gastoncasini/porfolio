@@ -1,6 +1,7 @@
 @import "./partials/_normalize.scss";
+@import "./partials/global.scss";
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: $font;
 }
