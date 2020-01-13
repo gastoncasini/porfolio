@@ -5,7 +5,7 @@ import "./styles.css";
 
 const About = (props) => {
   return (
-    <Page>
+    <Page {...props}>
       <div className="section__text-container">
         <h1 className="section__title">About me</h1>
         <p className="section__para">
