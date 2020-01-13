@@ -55,6 +55,7 @@
 
   &__link {
     font-family: $font;
+    font-style: italic;
     color: inherit;
     font-size: 18px;
     font-weight: bold;
@@ -62,6 +63,7 @@
     padding: 0 20px 20px;
     box-sizing: border-box;
     @include big-screens {
+      padding: 0 20px 40px;
       font-size: 36px;
     }
   }
