@@ -33,7 +33,7 @@ class Page extends Component {
       <section className={sectionClasses}>
         {loading && <LoadingOverlay />}
         <div className={containerClasses}>
-          <Link className="section__logo-container">
+          <Link className="section__logo-container" to="/">
             <Logo />
           </Link>
 
