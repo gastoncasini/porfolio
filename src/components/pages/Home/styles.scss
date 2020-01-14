@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
-@import "../Page/styles.css";
-@import "../../scss/partials/global.scss";
+@import "../../Page/styles.css";
+@import "../../../scss/partials/global.scss";
 
 .section {
   &__container {
@@ -13,7 +13,7 @@
 
   &__transparent {
     background: linear-gradient(transparent, transparent),
-      url(../../imgs/back.jpg) right center/cover no-repeat fixed;
+      url(../../../imgs/back.jpg) right center/cover no-repeat fixed;
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
