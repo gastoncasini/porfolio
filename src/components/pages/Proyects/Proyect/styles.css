@@ -10,3 +10,16 @@
         padding: 2em 1em; } }
     .proyects__proyect__content:hover {
       transform: scale(1.1); }
+  .proyects__proyect__title {
+    font-size: 20px; }
+    @media (min-width: 499px) {
+      .proyects__proyect__title {
+        font-size: 28px; } }
+  .proyects__proyect__icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px; }
+  .proyects__proyect__icon {
+    transition: all 0.2s ease; }
+    .proyects__proyect__icon:hover {
+      transform: scale(1.3); }

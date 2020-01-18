@@ -15,5 +15,25 @@
         transform: scale(1.1);
       }
     }
+
+    &__title {
+      font-size: 20px;
+
+      @include big-screens {
+        font-size: 28px;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    &__icon {
+      transition: all 0.2s ease;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
   }
 }

@@ -9,7 +9,7 @@ const Proyects = (props) => {
       title: "Online Appointment system",
       description: "web app developed with the MERN stack",
       link: "https://github.com/gastoncasini/react-appointment-system",
-      icons: ""
+      icons: ["react", "sass", "mongo", "node"]
     }
   ];
 
