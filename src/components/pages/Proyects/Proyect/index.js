@@ -4,26 +4,23 @@ import {
   DiReact as ReactIcon,
   DiSass as SassIcon,
   DiNodejsSmall as NodeIcon,
-  DiMongodb as MongoIcon
+  DiMongodb as MongoIcon,
+  DiGithubBadge as GithubIcon
 } from "react-icons/di";
 
 const iconStyle = {
   width: "60px",
-  height: "60px",
-
-  "&:hover": {
-    background: "red"
-  }
+  height: "60px"
 };
 
-function renderIcon(icon, stylesObj) {
+function renderIcon(icon, stylesObj, key) {
   const styles = { ...stylesObj };
   switch (icon) {
     case "react":
       styles.fill = "#42abc8";
       return (
         <li className="proyects__proyect__icon">
-          <ReactIcon style={styles} />
+          <ReactIcon style={styles} key={key} />
         </li>
       );
     case "sass":
@@ -31,7 +28,7 @@ function renderIcon(icon, stylesObj) {
 
       return (
         <li className="proyects__proyect__icon">
-          <SassIcon style={styles} />
+          <SassIcon style={styles} key={key} />
         </li>
       );
     case "mongo":
@@ -39,7 +36,7 @@ function renderIcon(icon, stylesObj) {
 
       return (
         <li className="proyects__proyect__icon">
-          <MongoIcon style={styles} />
+          <MongoIcon style={styles} key={key} />
         </li>
       );
     case "node":
@@ -47,7 +44,7 @@ function renderIcon(icon, stylesObj) {
 
       return (
         <li className="proyects__proyect__icon">
-          <NodeIcon style={styles} />
+          <NodeIcon style={styles} key={key} />
         </li>
       );
 
@@ -65,26 +62,14 @@ const Proyect = (props) => {
         <p className="proyects__proyect__description">{props.description}</p>
 
         <ul className="proyects__proyect__icons">
-          {props.icons.map((icon) => {
-            return renderIcon(icon, iconStyle);
+          {props.icons.map((icon, index) => {
+            return renderIcon(icon, iconStyle, index);
           })}
-          {/*         <li className="proyects__proyect__icon">
-            <ReactIcon style={iconStyle} />
-          </li>
-
-          <li className="proyects__proyect__icon">
-            <SassIcon style={iconStyle} />
-          </li>
-          <li className="proyects__proyect__icon">
-            <NodeIcon style={iconStyle} />
-          </li>
-          <li className="proyects__proyect__icon">
-            <MongoIcon style={iconStyle} />
-          </li> */}
         </ul>
         <div className="proyects__proyect__button">
-          <a href={props.link} className="proyects__proyects__link">
+          <a href={props.link} className="proyects__proyect__link">
             see it on github
+            <GithubIcon style={{ width: "30px", height: "30px" }} />
           </a>
         </div>
       </div>
