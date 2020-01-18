@@ -53,4 +53,5 @@ legend {
 
 html,
 body {
-  font-family: Lora, Georgia, serif; }
+  font-family: Lora, Georgia, serif;
+  overflow: hidden; }

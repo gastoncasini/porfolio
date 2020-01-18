@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700i&display=swap");
+.proyects__proyect {
+  border-bottom: 1px solid #cfcfcf; }
+  .proyects__proyect__content {
+    text-align: center;
+    padding: 1em 0.5em;
+    transition: all 150ms ease-in-out; }
+    @media (min-width: 499px) {
+      .proyects__proyect__content {
+        padding: 2em 1em; } }
+    .proyects__proyect__content:hover {
+      transform: scale(1.1); }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Overlay from "./components/Overlay";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
-import Skills from "./components/pages/Skills";
+import Proyects from "./components/pages/Proyects";
 
 import "./scss/app.css";
 
@@ -49,7 +49,7 @@ class App extends Component {
       <Router>
         {initAnimation && <Overlay />}
         <Switch>
-          <Route path="/" exact>
+          <Route strict exact path="/">
             <Home
               modifiers={modifiers}
               init={initAnimation}
@@ -57,8 +57,17 @@ class App extends Component {
               triggerLoad={this.triggerLoad}
             />
           </Route>
-          <Route path="/about" exact>
+          <Route strict exact path="/about">
             <About
+              modifiers={modifiers}
+              init={initAnimation}
+              loading={loading}
+              triggerLoad={this.triggerLoad}
+            />
+          </Route>
+
+          <Route exact strict path="/proyects">
+            <Proyects
               modifiers={modifiers}
               init={initAnimation}
               loading={loading}

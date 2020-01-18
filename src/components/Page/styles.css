@@ -4,7 +4,8 @@
   top: 0;
   z-index: 0;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden; }
   .section--init {
     background-image: url(../../imgs/back.jpg);
     background-position: center;

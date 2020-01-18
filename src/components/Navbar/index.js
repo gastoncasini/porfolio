@@ -22,8 +22,8 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className="navbar__link-container navbar__link-container--delayed2">
-            <Link className="navbar__link " to="/skills">
-              Skills
+            <Link className="navbar__link " to="/Proyects">
+              Proyects
             </Link>
           </li>
         </ul>

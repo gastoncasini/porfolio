@@ -23,7 +23,6 @@ class Page extends Component {
 
   render() {
     const { modifiers, loading } = this.props;
-    console.log(loading);
 
     let containerClasses = AddModifiers("section__container", modifiers);
 

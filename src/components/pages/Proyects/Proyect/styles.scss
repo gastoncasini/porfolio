@@ -1,0 +1,19 @@
+@import "../../../../scss/partials/global";
+.proyects {
+  &__proyect {
+    border-bottom: 1px solid #cfcfcf;
+
+    &__content {
+      text-align: center;
+      padding: 1em 0.5em;
+      transition: all 150ms ease-in-out;
+      @include big-screens {
+        padding: 2em 1em;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
