@@ -14,7 +14,7 @@
   @media (min-width: 499px) {
     .section__transparent {
       position: relative;
-      transform: translate(-100px, 300px); } }
+      transform: translate(-100px, 40%); } }
 
 .section__title--home {
   font-family: "Open Sans", sans-serif;
