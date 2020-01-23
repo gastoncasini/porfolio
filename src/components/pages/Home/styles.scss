@@ -16,8 +16,10 @@
       url(../../../imgs/back.jpg) right center/cover no-repeat fixed;
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    -moz-webkit-text-fill-color: transparent;
 
     @include big-screens {
       position: relative;
@@ -28,7 +30,7 @@
   &__title {
     &--home {
       font-family: "Open Sans", sans-serif;
-      font-size: 48px;
+      font-size: 42px;
       @include big-screens {
         font-size: 110px;
         text-align: right;

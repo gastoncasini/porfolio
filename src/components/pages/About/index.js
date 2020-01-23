@@ -9,7 +9,7 @@ const About = (props) => {
       <div className="section__text-container">
         <h1 className="section__title">About me</h1>
         <p className="section__para">
-          Hi, i'm gaston an argentine software developer currently working with
+          Hi, i'm Gaston an argentine software developer currently working with
           <strong> web technologies</strong>.
         </p>
         <p className="section__para">
