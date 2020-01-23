@@ -1,5 +1,5 @@
-##Personal Porfolio 
-
+Personal Porfolio 
+-----------------
 this proyect is a simple porfolio, minimal Styling and heavilly dependant in CSS animations to give an exelent UX.
 
 Routing is handled with React Roter Dom library.
